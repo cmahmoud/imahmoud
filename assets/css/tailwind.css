@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+    html,
+    body {
+        @apply bg-dark-50;
+    }
+    .nav-item[aria-current="page"] {
+        @apply border-b-2 border-primary-700 text-dark-700;
+    }
+    pre {
+        @apply rounded-md !bg-dark-700 p-2;
+    }
+    p code {
+        @apply px-0.5;
+    }
+    kbd {
+        margin: 0px 0.1em;
+        padding: 0.1em 0.6em;
+        border-radius: 3px;
+        border: 1px solid rgb(204, 204, 204);
+        color: rgb(51, 51, 51);
+        line-height: 1.4;
+        display: inline-block;
+        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2),
+            inset 0px 0px 0px 2px #ffffff;
+        background-color: rgb(247, 247, 247);
+        -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+        -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),
+            0 0 0 2px #ffffff inset;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        text-shadow: 0 1px 0 #fff;
+    }
+    *::selection {
+        @apply bg-dark-600 text-dark-50;
+    }
+    .article :is(h2, h3, h4, h5, h6) {
+        @apply before:mb-4 before:block before:w-full before:border-t before:border-gray-200;
+    }
+}
+@layer components {
+    .wrapper {
+        @apply container mx-auto mb-4 flex flex-col gap-4 px-4 md:px-16 lg:flex-row;
+    }
+    .nav-item {
+        @apply font-semibold capitalize text-dark-400;
+    }
+    .card {
+        @apply rounded-lg border border-gray-200 bg-white p-6 shadow-md;
+    }
+    .post__card {
+        @apply flex flex-col divide-y divide-gray-200;
+    }
+    .post__title {
+        @apply pb-2 text-xl font-bold text-indigo-700 decoration-dashed decoration-2 underline-offset-4 transition-all hover:text-dark-700 hover:underline;
+    }
+    .post__category {
+        @apply flex self-end text-sm font-bold capitalize text-gray-600;
+    }
+    .post__meta {
+        @apply space-x-2 text-sm font-medium text-gray-500;
+    }
+    .post__author {
+        @apply text-sm font-semibold text-gray-600;
+    }
+
+    .article {
+        @apply prose-headings:text-3xl prose-headings:font-medium prose-h1:text-4xl prose-h1:font-bold prose-a:no-underline;
+    }
+    .article p a {
+        @apply font-medium text-indigo-500 underline decoration-dashed underline-offset-4 hover:text-indigo-600;
+    }
+    .icon__wrapper {
+        @apply flex h-9 w-1/6 items-center justify-center transition-transform first:rounded-l-md last:rounded-r-md hover:scale-110;
+    }
+}

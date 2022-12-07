@@ -97,6 +97,11 @@ export default defineNuxtConfig({
                     href: "https://fonts.gstatic.com",
                 },
                 {
+                    rel: "preload",
+                    as: "style",
+                    href: "https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap",
+                },
+                {
                     rel: "stylesheet",
                     href: "https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap",
                 },

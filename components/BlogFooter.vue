@@ -1,7 +1,7 @@
 <template>
     <footer class="mt-auto bg-indigo-700 py-4 text-center text-white">
-        <h6 class="font-medium">
+        <strong class="font-medium">
             Copyright &copy; {{ new Date().getFullYear() }} Mahmoud Ibrahiam.
-        </h6>
+        </strong>
     </footer>
 </template>

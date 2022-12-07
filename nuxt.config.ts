@@ -70,6 +70,16 @@ export default defineNuxtConfig({
                     sizes: "any",
                     type: "image/svg+xml",
                 },
+                {
+                    rel: "stylesheet",
+                    type: "text/css",
+                    href: "/css/dank-mono.min.css",
+                },
+                {
+                    rel: "stylesheet",
+                    type: "text/css",
+                    href: "/css/montserrat.min.css",
+                },
             ],
         },
         layoutTransition: { name: "layout", mode: "out-in" },
@@ -82,5 +92,4 @@ export default defineNuxtConfig({
             routes: ["/sitemap.xml"],
         },
     },
-    build: {},
 });

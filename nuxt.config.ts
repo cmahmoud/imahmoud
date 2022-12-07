@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     ssr: true,
     modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "nuxt-svgo"],
-    css: ["~/assets/css/dank-mono.min.css", "~/assets/css/montserrat.min.css"],
+    css: [],
     webpack: {
         extractCSS: {
             ignoreOrder: true,

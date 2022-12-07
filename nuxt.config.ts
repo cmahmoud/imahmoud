@@ -4,18 +4,12 @@ export default defineNuxtConfig({
     modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "nuxt-svgo"],
     css: ["~/assets/css/dank-mono.min.css", "~/assets/css/montserrat.min.css"],
     webpack: {
-        extractCSS: true,
-        optimization: {
-            splitChunks: {
-                cacheGroups: {
-                    styles: {
-                        name: "styles",
-                        chunks: "all",
-                        enforce: true,
-                    },
-                },
-            },
+        extractCSS: {
+            ignoreOrder: true,
+            filname: "[name].css",
+            chunkFilename: "[id].css",
         },
+        optimizeCSS: true,
     },
     content: {
         watch: {
@@ -88,4 +82,5 @@ export default defineNuxtConfig({
             routes: ["/sitemap.xml"],
         },
     },
+    build: {},
 });

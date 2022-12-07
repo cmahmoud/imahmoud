@@ -1,20 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: true,
     modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "nuxt-svgo"],
     css: [],
     webpack: {
-        extractCSS: {
-            ignoreOrder: true,
-            filname: "[name].css",
-            chunkFilename: "[id].css",
-        },
         optimizeCSS: true,
-        optimization: {
-            splitChunks: {
-                maxSize: 300000,
-            },
-        },
     },
     content: {
         watch: {
@@ -67,6 +56,10 @@ export default defineNuxtConfig({
                     name: "google-site-verification",
                     content: "l6n-HRCEV5jy0z4F-ckQDj6bNns0O5RmeVICDnCbEzE",
                 },
+                {
+                    name: "theme-color",
+                    content: "#4338ca",
+                },
             ],
             link: [
                 {
@@ -76,20 +69,16 @@ export default defineNuxtConfig({
                     type: "image/svg+xml",
                 },
                 {
+                    rel: "mask-icon",
+                    href: "/logo.svg",
+                    sizes: "any",
+                },
+                {
                     rel: "preconnect",
                     href: "https://fonts.googleapis.com",
                 },
                 {
                     rel: "preconnect",
-                    href: "https://fonts.gstatic.com",
-                    crossorigin: "anonymous",
-                },
-                {
-                    rel: "preload",
-                    href: "https://fonts.googleapis.com",
-                },
-                {
-                    rel: "preload",
                     href: "https://fonts.gstatic.com",
                     crossorigin: "anonymous",
                 },
@@ -109,6 +98,15 @@ export default defineNuxtConfig({
                 {
                     rel: "stylesheet",
                     href: "https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap",
+                },
+                {
+                    rel: "apple-touch-icon",
+                    href: "/logo.svg",
+                    sizes: "any",
+                },
+                {
+                    rel: "manifest",
+                    href: "/manifest.json",
                 },
             ],
         },

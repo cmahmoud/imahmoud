@@ -5,6 +5,17 @@ export default defineNuxtConfig({
     css: ["~/assets/css/dank-mono.min.css", "~/assets/css/montserrat.min.css"],
     webpack: {
         extractCSS: true,
+        optimization: {
+            splitChunks: {
+                cacheGroups: {
+                    styles: {
+                        name: "styles",
+                        chunks: "all",
+                        enforce: true,
+                    },
+                },
+            },
+        },
     },
     content: {
         watch: {

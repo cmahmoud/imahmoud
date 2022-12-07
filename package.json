@@ -19,7 +19,8 @@
         "nuxt-svgo": "^1.1.0",
         "prettier": "^2.8.0",
         "prettier-plugin-tailwindcss": "^0.2.0",
-        "remark-reading-time": "^2.0.1"
+        "remark-reading-time": "^2.0.1",
+        "sitemap": "^7.1.1"
     },
     "dependencies": {}
 }

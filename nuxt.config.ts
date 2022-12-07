@@ -71,6 +71,16 @@ export default defineNuxtConfig({
                     type: "image/svg+xml",
                 },
                 {
+                    rel: "preload",
+                    as: "style",
+                    href: "/css/dank-mono.min.css",
+                },
+                {
+                    rel: "preload",
+                    as: "style",
+                    href: "/css/montserrat.min.css",
+                },
+                {
                     rel: "stylesheet",
                     type: "text/css",
                     href: "/css/dank-mono.min.css",

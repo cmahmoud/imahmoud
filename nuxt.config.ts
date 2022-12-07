@@ -10,6 +10,11 @@ export default defineNuxtConfig({
             chunkFilename: "[id].css",
         },
         optimizeCSS: true,
+        optimization: {
+            splitChunks: {
+                maxSize: 300000,
+            },
+        },
     },
     content: {
         watch: {

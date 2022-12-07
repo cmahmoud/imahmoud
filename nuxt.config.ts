@@ -3,6 +3,9 @@ export default defineNuxtConfig({
     ssr: true,
     modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "nuxt-svgo"],
     css: ["~/assets/css/dank-mono.min.css", "~/assets/css/montserrat.min.css"],
+    webpack: {
+        extractCSS: true,
+    },
     content: {
         watch: {
             ws: {

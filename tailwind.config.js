@@ -8,7 +8,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
-                mono: ["Dank Mono", ...defaultTheme.fontFamily.mono],
+                mono: ["DM Mono", ...defaultTheme.fontFamily.mono],
             },
             colors: {
                 primary: {

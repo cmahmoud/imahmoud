@@ -1,6 +1,7 @@
 {
     "name": "Mahmoud Ibrahiam",
     "short_name": "IMahmoud",
+    "start_url": "https://imahmoud.vercel.app/",
     "description": "FullStack developer and techincal writer",
     "icons": [
         {
@@ -20,8 +21,6 @@
             "purpose": "any maskable"
         }
     ],
-    "id": "/",
-    "start_url": "/",
     "scope": "/",
     "orientation": "portrait",
     "display": "standalone",

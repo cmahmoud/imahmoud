@@ -5,12 +5,23 @@
     "icons": [
         {
             "src": "/logo.svg",
-            "sizes": "any",
+            "sizes": "512x512",
             "type": "image/svg+xml"
+        },
+        {
+            "src": "/images/logo192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/logo512.png",
+            "type": "image/png",
+            "sizes": "512x512"
         }
     ],
+    "id": "/",
     "start_url": "/",
-    "scope": "",
+    "scope": "/",
     "orientation": "portrait",
     "display": "standalone",
     "theme_color": "#4338ca",

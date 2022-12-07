@@ -80,6 +80,23 @@ export default defineNuxtConfig({
                     crossorigin: "anonymous",
                 },
                 {
+                    rel: "preload",
+                    href: "https://fonts.googleapis.com",
+                },
+                {
+                    rel: "preload",
+                    href: "https://fonts.gstatic.com",
+                    crossorigin: "anonymous",
+                },
+                {
+                    rel: "dns-prefetch",
+                    href: "https://fonts.googleapis.com",
+                },
+                {
+                    rel: "dns-prefetch",
+                    href: "https://fonts.gstatic.com",
+                },
+                {
                     rel: "stylesheet",
                     href: "https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap",
                 },

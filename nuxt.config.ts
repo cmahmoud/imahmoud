@@ -66,6 +66,59 @@ export default defineNuxtConfig({
                     name: "theme-color",
                     content: "#4338ca",
                 },
+                {
+                    name: "keywords",
+                    content:
+                        "frontend, mern stack, mern, vue.js, nuxt, react.js, next.js, html,css,javscript, tailwindcss",
+                },
+                {
+                    name: "description",
+                    content:
+                        "Experienced Full Stack Developer with over 1 year of experience in Web development using Node.js, Express.js, MongoDB, React.js and Redux",
+                },
+                {
+                    property: "og:type",
+                    content: "website",
+                },
+                {
+                    property: "og:url",
+                    content: "https://imahmoud.vercel.app/",
+                },
+                {
+                    property: "og:title",
+                    content: "Mahmoud Ibrahiam",
+                },
+                {
+                    property: "og:description",
+                    content:
+                        "Well-qualified Full Stack Developer familiar with a wide range of programming utilities and languages.",
+                },
+                {
+                    property: "og:image",
+                    content: "https://imahmoud.vercel.app/images/cover.png",
+                },
+
+                {
+                    property: "twitter:card",
+                    content: "summary_large_image",
+                },
+                {
+                    property: "twitter:url",
+                    content: "https://imahmoud.vercel.app/",
+                },
+                {
+                    property: "twitter:title",
+                    content: "Mahmoud Ibrahiam",
+                },
+                {
+                    property: "twitter:description",
+                    content:
+                        "Well-qualified Full Stack Developer familiar with a wide range of programming utilities and languages.",
+                },
+                {
+                    property: "twitter:image",
+                    content: "https://imahmoud.vercel.app/images/cover.png",
+                },
             ],
             link: [
                 {

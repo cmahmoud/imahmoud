@@ -11,7 +11,7 @@ layout: article
 
 Well-qualified Full Stack Developer familiar with a wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease.
 
-Experienced Full Stack Developer with over 1 year of experience in Web development using Node.js, Express.js, MongoDB, React.js and, Redux, Common.JS, Babel+ES6, NEXT JS and Webpack for Single Page Application development.
+Experienced Full Stack Developer with over 1 year of experience in Web development using Node.js, Express.js, MongoDB, React.js and Redux, Common.JS, Babel+ES6, NEXT JS and Webpack for Single Page Application development.
 
 Expertise in developing web pages using HTML5, CSS3, MVC, SASS, Object-Oriented JavaScript, ES6, jQuery, AJAX, JSON, XML. Good understanding of Document Object Model (DOM) and DOM Functions.
 

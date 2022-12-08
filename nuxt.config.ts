@@ -70,13 +70,36 @@ export default defineNuxtConfig({
             link: [
                 {
                     rel: "icon",
-                    href: "/logo.svg",
-                    sizes: "any",
+                    href: "/favicon/48.png",
+                    type: "image/png",
+                    sizes: "48x48",
+                },
+                {
+                    rel: "icon",
+                    href: "/favicon/192.png",
+                    type: "image/png",
+                    sizes: "192x192",
+                },
+                {
+                    rel: "shortcut icon",
+                    href: "/favicon/192.png",
+                    type: "image/png",
+                    sizes: "192x192",
+                },
+                {
+                    rel: "icon",
+                    href: "/favicon/favicon.svg",
                     type: "image/svg+xml",
+                    sizes: "any",
+                },
+                {
+                    rel: "apple-touch-icon",
+                    href: "/favicon/180.png",
+                    sizes: "any",
                 },
                 {
                     rel: "mask-icon",
-                    href: "/logo.svg",
+                    href: "/images/mask.png",
                     sizes: "any",
                 },
                 {
@@ -104,11 +127,6 @@ export default defineNuxtConfig({
                 {
                     rel: "stylesheet",
                     href: "https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap",
-                },
-                {
-                    rel: "apple-touch-icon",
-                    href: "/logo.svg",
-                    sizes: "any",
                 },
                 {
                     rel: "manifest",

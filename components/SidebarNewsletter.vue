@@ -25,7 +25,7 @@ export default {
         <h3 class="mb-4 text-center text-3xl font-bold text-white">
             Subscribe<br />my newsletter
         </h3>
-        <p class="mb-8 text-center text-sm font-medium text-indigo-200">
+        <p class="mb-8 text-center text-sm font-medium text-white">
             Subscribe to my newsletter to receive all articles directly in your
             email inbox weekly.
         </p>
@@ -47,7 +47,7 @@ export default {
                 required
             />
             <button
-                class="grid h-12 place-items-center rounded-md bg-indigo-500 font-medium text-indigo-50"
+                class="grid h-12 place-items-center rounded-md bg-indigo-500 font-medium text-white"
             >
                 <svg
                     v-if="loading"

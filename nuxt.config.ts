@@ -41,6 +41,12 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
+            script: [
+                {
+                    src: "/sw.js",
+                    defer: "true",
+                },
+            ],
             htmlAttrs: {
                 lang: "en",
                 dir: "ltr",

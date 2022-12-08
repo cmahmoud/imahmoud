@@ -1,10 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    ssr: true,
     modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "nuxt-svgo"],
-    css: [],
-    webpack: {
-        optimizeCSS: true,
-    },
     content: {
         watch: {
             ws: {
@@ -97,7 +94,6 @@ export default defineNuxtConfig({
                     property: "og:image",
                     content: "https://imahmoud.vercel.app/images/cover.png",
                 },
-
                 {
                     property: "twitter:card",
                     content: "summary_large_image",

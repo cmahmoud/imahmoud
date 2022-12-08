@@ -2,10 +2,18 @@
 title: "How to choose the right API Gateway 1"
 description: "Nowadays an API Gateway is an essential component in designing a distributed system's architecture with multiple API services or microservices."
 category: "vue"
-cover: "/images/poster.jpg"
+cover: "/articles/poster.jpg"
 author: "Mahmoud Ibrahiam"
 createdAt: "2022-10-22"
 layout: article
+head:
+  meta:
+    - name: "keywords"
+      content: "vue.js, nuxt.js"
+    - name: "og:type"
+      content: "article"
+    - name: "og:title"
+      content: "How to choose the right API Gateway 1"
 ---
 
 One of the main use cases of API gateways is that they introduce an API-as-a-service abstraction to allow API providers to abstract API implementations and evolve backend architecture without impacting API consumers.

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
     title: "Mahmoud Ibrahiam",
-    meta: [{ name: "description", content: "My amazing site." }],
+    meta: [],
 });
 const query = {
     sort: { createdAt: -1 },

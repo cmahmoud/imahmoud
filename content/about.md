@@ -4,10 +4,7 @@ description: "Experienced Full Stack Developer with over 1 year of experience in
 layout: article
 ---
 
-
-# Mahmoud Ibrahiam
-
-![Mahmoud Ibrahiam](/mahmoud.jpg){.mx-auto .h-[400px] .w-[400px] .rounded-full .object-cover .object-top}
+![Mahmoud Ibrahiam](/mahmoud.jpg){.mx-auto .h-[300px] .w-[300px] .md:h-[400px] .md:w-[400px] .rounded-full .object-cover .object-top}
 
 Well-qualified Full Stack Developer familiar with a wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease.
 
@@ -21,7 +18,7 @@ Extensively using GIT for version controlling and regularly pushed the code to G
 
 ## Skills
 
-::ul{.grid .grid-cols-2}
+::ul{.grid .grid-cols-2 .text-primary-500 .font-medium .text-sm .md:text-base}
 
 ::li
 HTML
@@ -57,7 +54,7 @@ Nuxt.js
 Wordpress
 ::
 ::li
-Redux, State management libraries
+State management
 ::
 ::li
 Wepback
@@ -66,6 +63,9 @@ Wepback
 Git
 ::
 ::li
-Tailwindcss,Bootstrap
+Tailwindcss
+::
+::li
+Bootstrap
 ::
 ::

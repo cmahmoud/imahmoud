@@ -27,8 +27,8 @@
                     />
                 </svg>
             </NuxtLink>
-            <div class="flex items-center">
-                <NuxtLink to="/about" class="nav-item py-4">about</NuxtLink>
+            <div class="flex items-center py-4">
+                <NuxtLink to="/about" class="nav-item">about</NuxtLink>
             </div>
         </div>
     </nav>

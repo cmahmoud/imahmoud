@@ -72,7 +72,7 @@
     }
 
     .article {
-        @apply prose-headings:text-3xl prose-headings:font-medium prose-h1:text-4xl prose-h1:font-bold prose-a:no-underline;
+        @apply prose-headings:mt-6 prose-headings:text-3xl prose-headings:font-medium prose-h1:text-4xl prose-h1:font-bold prose-a:no-underline;
     }
     .article p a {
         @apply font-medium text-indigo-500 underline decoration-dashed underline-offset-4 hover:text-indigo-600;

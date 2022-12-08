@@ -10,10 +10,6 @@ head:
   meta:
     - name: "keywords"
       content: "vue.js, nuxt.js"
-    - name: "og:type"
-      content: "article"
-    - name: "og:title"
-      content: "How to choose the right API Gateway 1"
 ---
 
 One of the main use cases of API gateways is that they introduce an API-as-a-service abstraction to allow API providers to abstract API implementations and evolve backend architecture without impacting API consumers.

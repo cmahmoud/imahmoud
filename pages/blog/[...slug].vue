@@ -47,7 +47,7 @@ useHead({
     <div>
         <NuxtLayout name="article">
             <article class="card article prose prose-dark max-w-full">
-                <ContentDoc v-slot="{ doc }" :head="true">
+                <ContentDoc v-slot="{ doc }">
                     <h1>{{ doc.title }}</h1>
                     <header
                         class="mb-6 flex justify-between border-y border-gray-200 py-1"
@@ -73,8 +73,13 @@ useHead({
                             {{ doc.category }}
                         </div>
                     </header>
+                    <img
+                        :src="doc.cover"
+                        class="mx-auto"
+                        :alt="doc.title"
+                        lazy="loading"
+                    />
                     <ContentRenderer :value="doc" />
-                    <pre>{{ page }}</pre>
                 </ContentDoc>
             </article>
         </NuxtLayout>

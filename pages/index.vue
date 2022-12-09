@@ -2,6 +2,19 @@
 useHead({
     title: "Mahmoud Ibrahiam",
     meta: [],
+    script: [
+        {
+            innerHTML: {
+                "@context": "https://schema.org/",
+                "@type": "Person",
+                name: "Mahmoud Ibrahiam",
+                url: "https://imahmoud.vercel.app",
+                image: "https://imahmoud.vercel.app/mahmoud.jpg",
+                jobTitle: "FullStack Developer",
+            },
+            type: "application/ld+json",
+        },
+    ],
 });
 const query = {
     sort: { createdAt: -1 },

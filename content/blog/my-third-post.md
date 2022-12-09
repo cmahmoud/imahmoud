@@ -4,7 +4,7 @@ description: "Nowadays an API Gateway is an essential component in designing a d
 category: "vue"
 cover: "/images/poster.jpg"
 author: "Mahmoud Ibrahiam"
-createdAt: "2022-10-23"
+updatedAt: "2022-10-23"
 layout: article
 ---
 

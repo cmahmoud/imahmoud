@@ -9,7 +9,7 @@ useHead({
         },
         {
             property: "og:url",
-            content: `https://imahmoud.vercel.app/${article._path}`,
+            content: `https://imahmoud.vercel.app${article._path}`,
         },
         {
             property: "og:title",
@@ -25,7 +25,7 @@ useHead({
         },
         {
             property: "twitter:url",
-            content: `https://imahmoud.vercel.app/${article._path}`,
+            content: `https://imahmoud.vercel.app${article._path}`,
         },
         {
             property: "twitter:title",
@@ -38,6 +38,37 @@ useHead({
         {
             property: "twitter:image",
             content: `https://imahmoud.vercel.app${article.cover}`,
+        },
+    ],
+    script: [
+        {
+            innerHTML: {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                mainEntityOfPage: {
+                    "@type": "WebPage",
+                    "@id": `https://imahmoud.vercel.app${article._path}`,
+                },
+                headline: article.title,
+                description: article.description,
+                image: `https://imahmoud.vercel.app${article.cover}`,
+                author: {
+                    "@type": "Person",
+                    name: article.author,
+                    url: "https://imahmoud.vercel.app",
+                },
+                publisher: {
+                    "@type": "Organization",
+                    name: article.author,
+                    logo: {
+                        "@type": "ImageObject",
+                        url: "https://imahmoud.vercel.app/images/logo.png",
+                    },
+                },
+                datePublished: article.createdAt,
+                dateModified: article.updatedAt,
+            },
+            type: "application/ld+json",
         },
     ],
 });

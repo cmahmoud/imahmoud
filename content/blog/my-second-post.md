@@ -5,6 +5,7 @@ category: "vue"
 cover: "/images/poster.jpg"
 author: "Mahmoud Ibrahiam"
 createdAt: "2022-12-01"
+updatedAt: "2022-12-01"
 avatar: "/mahmoud.jpg"
 layout: article
 ---

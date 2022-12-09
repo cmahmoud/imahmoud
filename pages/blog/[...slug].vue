@@ -62,7 +62,7 @@ useHead({
                     name: article.author,
                     logo: {
                         "@type": "ImageObject",
-                        url: "https://imahmoud.vercel.app/images/logo.png",
+                        url: "https://imahmoud.vercel.app/images/mahmoud.jpg",
                     },
                 },
                 datePublished: article.createdAt,

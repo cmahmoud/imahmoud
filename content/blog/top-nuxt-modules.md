@@ -229,3 +229,152 @@ export default defineNuxtConfig({
 ```
 
 You can reed more on [Nuxt Auth](https://sidebase.io/nuxt-auth/getting-started){target="_blank"}.
+
+### 7. Nuxt Viewport
+
+[Nuxt Viewport](https://github.com/mvrlin/nuxt-viewport){target="_blank"} is module that let you define custom viewports for your nuxt application with zero configuration.
+
+::h4{.text-xl .!text-indigo-500 id="nuxt-viewport-setup"}
+7.1 Installation
+::
+
+```shell
+# yarn
+yarn add -D nuxt-viewport
+
+# npm
+npm install --save-dev nuxt-viewport
+```
+
+add `nuxt-viewport` to `modules` in `next.config.ts`.
+
+```ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+    modules: [
+        'nuxt-viewport',
+    ]
+})
+```
+
+::h4{.text-xl .!text-indigo-500 id="nuxt-viewport-usage"}
+7.2 Usage
+::
+
+```vue
+<script setup>
+import { useNuxtApp } from '#app'
+const { $viewport } = useNuxtApp()
+</script>
+<template>
+  <div>
+    <div v-if="$viewport.isLessThan('tablet')">render only on mobile</div>
+    <div v-else>Current breakpoint: {{ $viewport.breakpoint }}</div>
+  </div>
+</template>
+```
+
+You can reed more on [Nuxt Viewport](https://github.com/mvrlin/nuxt-viewport){target="_blank"}.
+
+### 8. Nuxt Icon
+
+[Nuxt Icon](https://github.com/nuxt-modules/icon){target="_blank"} is module with over 100,000  open source vector icons from [iconify](https://iconify.design/) to use in nuxt apps.
+
+::h4{.text-xl .!text-indigo-500 id="nuxt-icon-setup"}
+8.1 Installation
+::
+
+```shell
+# yarn
+yarn add -D nuxt-icon
+
+# npm
+npm install --save-dev nuxt-icon
+```
+
+add `nuxt-icon` to `modules` in `next.config.ts`.
+
+```ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+    modules: [
+        'nuxt-icon',
+    ]
+})
+```
+
+::h4{.text-xl .!text-indigo-500 id="nuxt-viewport-usage"}
+8.2 Usage
+::
+
+You can use any icon from the [icones.js](https://icones.js.org/) collection by name:
+
+```vue
+<template>
+  <Icon name="fa6-solid:0" />
+</template>
+```
+
+You can reed more on [Nuxt Icon](https://github.com/nuxt-modules/icon){target="_blank"}.
+
+### 9. Nuxt I18n
+
+Internationalization (i18n) is the process of preparing software to support local language and cultural preferences.
+
+[Nuxt I18n](https://v8.i18n.nuxtjs.org/){target="_blank"} is module for adding internationalization to nuxt projects with easily configuration.
+
+::h4{.text-xl .!text-indigo-500 id="nuxt-i18n-setup"}
+Installation
+::
+
+```shell
+# yarn
+yarn add -D @nuxtjs/i18n
+
+# npm
+npm install --save-dev @nuxtjs/i18n
+```
+
+add `@nuxtjs/i18n` to `modules` in `next.config.ts`.
+
+```ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+    modules: [
+        '@nuxtjs/i18n',
+    ]
+})
+```
+
+You can reed more on [Nuxt I18n](https://v8.i18n.nuxtjs.org/){target="_blank"}.
+
+### 10. Nuxt Lodash
+
+[Nuxt Lodash](https://github.com/cipami/nuxt-lodash#readme){target="_blank"} is module that provide [lodash](https://lodash.com/) library for nuxt projects with auto import and custom prefix.
+
+::h4{.text-xl .!text-indigo-500 id="nuxt-lodash-setup"}
+Installation
+::
+
+```shell
+# yarn
+yarn add -D nuxt-lodash
+
+# npm
+npm install --save-dev nuxt-lodash
+```
+
+add `nuxt-lodash` to `modules` in `next.config.ts`.
+
+```ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+    modules: [
+        'nuxt-lodash',
+    ]
+})
+```
+
+You can reed more on [Nuxt lodash](https://github.com/cipami/nuxt-lodash#readme){target="_blank"}.
+
+There are many other modules that you can use to improve and extend your Nuxt projects and you can find them on [Nuxt official website](https://nuxt.com/modules) or by search in [npm packages](https://www.npmjs.com/search?q=keywords:nuxt).

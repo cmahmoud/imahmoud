@@ -109,6 +109,7 @@ useHead({
                         class="mx-auto"
                         :alt="doc.title"
                         loading="lazy"
+                        format="webp"
                     />
                     <ContentRenderer :value="doc" />
                 </ContentDoc>

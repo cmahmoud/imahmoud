@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="flex h-screen flex-col">
         <Navbar />
         <div class="wrapper">
             <main class="flex w-full flex-col gap-4 lg:w-2/3">

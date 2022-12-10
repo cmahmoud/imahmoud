@@ -104,11 +104,11 @@ useHead({
                             {{ doc.category }}
                         </div>
                     </header>
-                    <img
+                    <nuxt-img
                         :src="doc.cover"
                         class="mx-auto"
                         :alt="doc.title"
-                        lazy="loading"
+                        loading="lazy"
                     />
                     <ContentRenderer :value="doc" />
                 </ContentDoc>

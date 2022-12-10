@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "nuxt-svgo"],
+    modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "@nuxt/image-edge"],
     content: {
         watch: {
             ws: {
@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         highlight: {
             theme: {
                 default: "one-dark-pro",
-                dark: "github-dark",
+                dark: "one-dark-pro",
                 sepia: "one-dark-pro",
             },
             preload: [
@@ -23,6 +23,9 @@ export default defineNuxtConfig({
                 "sass",
                 "scss",
                 "python",
+                "bash",
+                "shell",
+                "sh",
             ],
         },
         markdown: {

@@ -1,7 +1,16 @@
 <script setup lang="ts">
 useHead({
     title: "Mahmoud Ibrahiam",
-    meta: [],
+    meta: [
+        {
+            name: "robots",
+            content: "index,follow",
+        },
+        {
+            name: "googlebot",
+            content: "follow",
+        },
+    ],
     script: [
         {
             innerHTML: {

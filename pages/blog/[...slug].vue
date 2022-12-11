@@ -4,6 +4,14 @@ const article = await queryContent().where({ _path: route.path }).findOne();
 useHead({
     meta: [
         {
+            name: "robots",
+            content: "index,follow",
+        },
+        {
+            name: "googlebot",
+            content: "follow",
+        },
+        {
             property: "og:type",
             content: "article",
         },

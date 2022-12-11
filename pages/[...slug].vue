@@ -1,3 +1,18 @@
+<script>
+useHead({
+    meta: [
+        {
+            name: "robots",
+            content: "index,follow",
+        },
+        {
+            name: "googlebot",
+            content: "follow",
+        },
+    ],
+});
+</script>
+
 <template>
     <div>
         <NuxtLayout name="article">

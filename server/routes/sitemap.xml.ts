@@ -6,10 +6,14 @@ export default defineEventHandler(async (event) => {
     const sitemap = new SitemapStream({
         hostname: "https://imahmoud.vercel.app",
     });
+    sitemap.write({
+        url: "/",
+        changefreq: "weekly",
+    });
     for (const doc of docs) {
         sitemap.write({
             url: doc._path,
-            changefreq: "weekly",
+            changefreq: "monthly",
         });
     }
     sitemap.end();
